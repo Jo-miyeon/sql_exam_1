@@ -39,7 +39,6 @@ public class DBTest {
 				// =========================================삽입===========================================
 				String sql2 = " INSERT INTO article SET title = ?, `body` = ?, nickname = '홍길동', hit = 10";
 				PreparedStatement pstmt2 = conn.prepareStatement(sql2);
-				
 				pstmt2.setString(1, "dfdf");
 				pstmt2.setString(2, "kkkk");			
 				pstmt2.executeUpdate();
